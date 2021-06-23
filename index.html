@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <title>Multi-Runner Lap Time Tracker</title>
+    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div class="app-content">
+        <div class="race-information col-md-4">
+
+            <h3><u>Multi-Runner Lap Time Tracker App</u></h3>
+
+            <h4>Instructions:
+                <ul>1 - Enter the contestant names</ul>
+                <ul>2 - Click on Begin Race</ul>
+                <ul>3 - Click on each contestant name to register a lap</ul>
+                <ul>4 - Click End race when the race concludes</ul>
+                <ul>5 - Enter new contestant names to reset the tracker app</ul>
+            </h4>
+            <div class="race_buttons">
+                <div class="race-control add-competitor col-md-5">
+
+
+                    <input id="inputname" class="form-control" type="text" name="new"
+                        placeholder="Type the Name and hit enter...">
+                    <button class="btn-dark btn-outline-primary col-md-12 col-xs-4" id="btnAdd">
+                        <h4
+                            style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 20px;">
+                            Enter Name</h4>
+                    </button>
+
+                </div>
+
+                <div class="race-control col-md-7">
+                    <button class="btn btn-warning col-md-7 col-xs-12" id="btnStart" disabled>
+                        <h4
+                            style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 20px; color: black;">
+                            Begin Race</h4>
+
+                    </button>
+                    <button class="btn btn-danger col-md-7 col-xs-12" id="btnEnd" disabled>
+                        <h4
+                            style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 20px; color: black;">
+                            End Race</h4>
+
+                    </button>
+
+                    <div class="stopwatch" id="stopwatch">00:00:00</div>
+                </div>
+            </div>
+
+
+            <div class="race-result col-md-12">
+                <h3><u>Race Winner</u></h3>
+
+                <h5 id="winnername" class="col-md-12"> Race Winner ___</h5>
+                <h5 id="winnerlapcount" class="col-md-12"></h5>
+                <h5 id="winnerlapavgtime" class="col-md-12"></h5>
+            </div>
+            <div class="race-result col-md-12">
+                <h3><u>Fastest Lap</u></h3>
+
+                <h4 id="fastestname" class="race-fastest-lap col-md-12">
+                    The runner who achieved the fastest lap and his lap time.
+                </h4>
+                <h5 style="position: relative; left:20px" id="fastestlap" class="col-md-12"></h5>
+                <h5 id="fastesttime" class="col-md-12"></h5>
+            </div>
+
+
+            <div class="race-info col-md-12">
+                <h3><u>Race Details</u></h3>
+                <h4 class="race-start-label col-md-12"> Race Start Date and Time<small id="racestarttime"
+                        class="race-start-time col-md-12">__/__/____ @ __:__:___.___</small>
+                </h4>
+                <h4 class="race-end-label col-md-12"> Race End Date and Time<small id="raceendtime"
+                        class="race-end-time col-md-12">__/__/____ @ __:__:___.___</small>
+                    </h5>
+            </div>
+        </div>
+        <div class="race-card col-md-8">
+            <div class="header-details col-md-12">
+                <span class="column col_1">Name</span>
+                <span class="column col_2">Lap Count</span>
+                <span class="column col_3">Total Time</span>
+                <span class="column col_4">Average Time</span>
+                <span class="column col_5">Last Lap Time</span>
+            </div>
+            <div class="race-details"></div>
+        </div>
+    </div>
+</body>
+
+</html>

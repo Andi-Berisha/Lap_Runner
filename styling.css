@@ -1,0 +1,106 @@
+body{
+	background: rgb(255, 255, 255); /* Old browsers */
+	background: -moz-linear-gradient(top, rgb(0, 3, 5) 0%, rgb(0, 2, 5) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgb(0, 7, 12) 0%,rgb(0, 0, 0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgb(255, 255, 255) 0%,rgb(0, 1, 2) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.app-content{
+    margin: 8px;
+}
+
+.app-content > div {
+    padding: 5px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(240, 240, 237);
+    border-radius: 5px;
+    height: calc(100% - 13px);
+    overflow-x : auto;
+}
+.race-information > div{
+    
+	margin: 1px 0;	
+}
+.race-information .race-control{
+    margin-top: 3%;
+	z-index:1;
+
+}
+
+.race-information .race-control{
+    
+    
+    margin-bottom: 65px;
+}
+	
+.race-information .race-result{
+    border-top: 1px solid;
+    position: relative; 
+    top: -50px
+}
+    
+
+
+.race-information .race-control .form-control{
+    
+	text-overflow: ellipsis;
+}
+.race-information .race_buttons{
+    position: relative; 
+  top: 20px;
+    
+	border-top: 1px solid;
+}
+.race-control .btn{
+    border-top: 1px solid;
+	margin: 2px;
+    width: 100%;
+    height: 7%;
+}
+
+.header-details{
+    
+    border-bottom: 2px solid;
+    font-weight: bold;
+    height: 35px;
+    line-height: 2em;
+}
+.race-info {
+    border-top: 1px solid;
+    position: relative; 
+    top: -50px;
+    
+    
+}
+.btn-warning{
+	margin: 2px 5px;
+    width: 90%;
+	overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.runner{
+	margin:2px 0;
+	padding:1px 0;
+}
+
+.odd-row{
+	background:#b9dbf756;
+}
+
+.column {
+    width: 15%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.stopwatch {
+    font-size: 3em;
+    font-family: monospace;
+}
+
+
+
