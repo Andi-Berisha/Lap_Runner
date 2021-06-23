@@ -1,3 +1,3 @@
 # Lap_Runner
 
-[Click here for project demo](https://andi-berisha.github.io/Lap_Runner/"Click here for demo")
+[Click here for project demo](https://andi-berisha.github.io/Lap_Runner/)
